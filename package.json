@@ -11,7 +11,7 @@
   "scripts": {
     "build": "tsc",
     "lint": "eslint --ext .ts ./src",
-    "types": "dts-bundle --removeSource --name utils --main ./dist --out ../typings/index.d.ts --baseDir ./dist"
+    "types": "dts-bundle --removeSource --name erela.js-utils --main ./dist --out ../typings/index.d.ts --baseDir ./dist"
   },
   "repository": "Erelajs/utils",
   "bugs": "https://github.com/Erelajs/utils",
