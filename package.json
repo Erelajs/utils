@@ -1,0 +1,45 @@
+{
+  "name": "erela.js-utils",
+  "version": "1.0.0",
+  "description": "Utils for the Erela.JS ecosystem.",
+  "main": "dist/index.js",
+  "types": "typings/index.d.ts",
+  "author": "MenuDocs (https://github.com/MenuDocs)",
+  "contributors": [
+    "Solaris9"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint --ext .ts ./src",
+    "types": "dts-bundle --removeSource --name utils --main ./dist --out ../typings/index.d.ts --baseDir ./dist"
+  },
+  "repository": "Erelajs/utils",
+  "bugs": "https://github.com/Erelajs/utils",
+  "homepage": "https://github.com/Erelajs/utils#readme",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.29.1",
+    "@typescript-eslint/parser": "^4.29.1",
+    "dts-bundle": "^0.7.3",
+    "eslint": "^7.32.0",
+    "eslint-config-tesseract": "MenuDocs/eslint-config-tesseract",
+    "typescript": "^4.3.5"
+  },
+  "eslintConfig": {
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "rules": {
+      "valid-jsdoc": "off",
+      "no-extra-parens": "off"
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "tesseract"
+    ]
+  }
+}
